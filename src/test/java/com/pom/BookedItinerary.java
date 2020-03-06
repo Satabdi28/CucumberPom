@@ -1,6 +1,5 @@
 package com.pom;
 
-import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,16 +11,19 @@ public class BookedItinerary extends LibGlobal {
 public BookedItinerary() {
 PageFactory.initElements(driver, this);
 }
-@FindBy(xpath = "(//input[@type='submit'])[2]")
-private List< WebElement> btncancelselected;
+@FindBy(xpath = "//input[@name='cancelall']")
+private WebElement btncancelselected;
 
-public List<WebElement> getBtncancelselected() {
+public WebElement getBtncancelselected() {
 	return btncancelselected;
 }
 
 
-
 }
+
+
+
+
 
 
 

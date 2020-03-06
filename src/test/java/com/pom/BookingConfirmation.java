@@ -1,7 +1,5 @@
 package com.pom;
 
-import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,13 +12,14 @@ PageFactory.initElements(driver, this);
 }
 
 @FindBy(id = "order_no")
-private WebElement orderno;
+private WebElement testOrder;
 
-@FindBy(id = "my_itinerary")
+@FindBy(id ="my_itinerary")
 private WebElement btnItinerary;
 
+
 public WebElement getOrderno() {
-	return orderno;
+	return testOrder;
 }
 
 public WebElement getBtnItinerary() {

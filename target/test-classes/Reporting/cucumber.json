@@ -1,0 +1,219 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verifying hotel booking details",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-hotel-booking-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 57950807501,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Adactin page",
+            "match": {
+              "location": "BookHotelPageSetup.user_is_on_Adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4485260100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters details",
+            "match": {
+              "location": "BookHotelPageSetup.user_enters_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Satabdi28",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16429387100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should click the login button",
+            "match": {
+              "location": "BookHotelPageSetup.user_should_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8472767401,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters the hotel details",
+            "match": {
+              "location": "BookHotelPageSetup.user_enters_the_hotel_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Location",
+                  "Hotels",
+                  "Room Type",
+                  "Number of Rooms",
+                  "Check In Date",
+                  "Check Out Date",
+                  "Adults per Room"
+                ]
+              },
+              {
+                "cells": [
+                  "Paris",
+                  "Hotel Sunshine",
+                  "Double",
+                  "1-One",
+                  "04/03/2020",
+                  "05/03/2020",
+                  "2-Two"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14266752001,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should click the Search button",
+            "match": {
+              "location": "BookHotelPageSetup.user_should_click_the_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24298913700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should click the radio button and then click the Continue button",
+            "match": {
+              "location": "BookHotelPageSetup.user_should_click_the_radio_button_and_then_click_the_Continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6239575300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters the booking details",
+            "match": {
+              "location": "BookHotelPageSetup.user_enters_the_booking_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First Name",
+                  "Last Name",
+                  "Billing Address",
+                  "Credit Card No.",
+                  "Credit Card Type",
+                  "Expiry Date",
+                  "Expiry Datee",
+                  "CVV Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Satabdi",
+                  "Chatterjee",
+                  "Aminjikarai",
+                  "2865330178511255",
+                  "VISA",
+                  "October",
+                  "2022",
+                  "280"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10402997800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should click Book Now button",
+            "match": {
+              "location": "BookHotelPageSetup.user_should_click_Book_Now_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21812603100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User confirms the booking",
+            "match": {
+              "location": "BookHotelPageSetup.user_confirms_the_booking()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2009952300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User cancels the booked hotel",
+            "match": {
+              "location": "BookHotelPageSetup.user_cancels_the_booked_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4340470799,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User will close the browser",
+            "match": {
+              "location": "BookHotelPageSetup.user_will_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin details",
+    "description": "",
+    "id": "verifying-adactin-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/BookHotelPage.feature",
+    "tags": []
+  }
+]

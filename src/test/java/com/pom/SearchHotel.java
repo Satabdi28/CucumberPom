@@ -22,7 +22,7 @@ private WebElement hotel;
 private WebElement roomtype;
 
 @FindBy(xpath = "//select[@name='room_nos']")
-private List<WebElement> numberofrooms;
+private WebElement numberofrooms;
 
 @FindBy(id = "datepick_in")
 private WebElement datein;
@@ -48,7 +48,7 @@ public WebElement getRoomtype() {
 	return roomtype;
 }
 
-public List<WebElement> getNumberofrooms() {
+public WebElement getNumberofrooms() {
 	return numberofrooms;
 }
 

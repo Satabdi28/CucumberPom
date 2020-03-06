@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class LibGlobal {
-protected WebDriver driver;
+public static WebDriver driver;
     
     public WebDriver getDriver() {
     System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shatabdi\\eclipse-workspace\\Cucumberproject\\drivers\\chromedriver.exe");
@@ -50,7 +49,10 @@ protected WebDriver driver;
     new Select(element).selectByIndex(index);
     screenShot();
     }
-    
+    public String getAttributeValue(WebElement element) {
+    return element.getAttribute("value");
+    	
+    }
     public String generateDate() {
     return new SimpleDateFormat("dd_mm_yyyy_hhmmss").format(new Date());
     }
